@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Item extends Model
 {
     public function activities()
     {
-        return $this->hasMany(Activity::class, 'id_user');
+        return $this->hasMany(Activity::class, 'id_item');
     }
 }
+
